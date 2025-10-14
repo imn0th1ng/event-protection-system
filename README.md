@@ -53,14 +53,14 @@ local Event = exports["event-protection-system"]:getEventSystem()
 
 # FUNCTIONS
 * Client
-** Event.Client.RegisterNetEvent(name, handler)
-** Event.Client.TriggerEvent(name, args)
-** Event.Client.TriggerServerEvent(name, args)
+* Event.Client.RegisterNetEvent(name, handler)
+* Event.Client.TriggerEvent(name, args)
+* Event.Client.TriggerServerEvent(name, args)
 * Server
-** Event.Server.RegisterServerEvent(name, handler)
-** Event.Server.RegisterNetEvent(name, handler)
-** Event.Server.TriggerClientEvent(name, args)
-** Event.Server.TriggerEvent(name, args)
+* Event.Server.RegisterServerEvent(name, handler)
+* Event.Server.RegisterNetEvent(name, handler)
+* Event.Server.TriggerClientEvent(name, args)
+* Event.Server.TriggerEvent(name, args)
 
 # Features
 * AES128 encryption (enough for fivem tho)
@@ -81,6 +81,7 @@ I have a special thanks for to who makes the crypto libraries in pure lua. If th
 
 * https://github.com/Egor-Skriptunoff/pure_lua_SHA
 * https://github.com/bighil/aeslua
+
 
 
 
