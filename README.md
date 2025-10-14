@@ -8,7 +8,6 @@ One of the biggest problems with this project is the possibility that protection
 The advantage of this system is that the name is regenerated differently for each event using HMAC/SHA256 without requiring any action on your part, and the payload (i.e., your event content) is fully encrypted using AES128 CBC, preventing event loggers from reading it directly. Of course, this will come at a CPU cost, but I recommend using it only when you are giving items and money. If you use it for unnecessary events, the CPU cost will increase significantly.
 
 # FAQ
-
 Q: Is this an anti-cheat?
 A: Both yes and no. It's not a fully integrated anti-cheat system; you may need to configure certain events and fine-tune them yourself.
 
@@ -76,3 +75,4 @@ I have a special thanks for to who makes the crypto libraries in pure lua. If th
 https://github.com/Egor-Skriptunoff/pure_lua_SHA
 
 https://github.com/bighil/aeslua
+
