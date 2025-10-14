@@ -46,24 +46,24 @@ Nil
 - You can call the event object with this export
 local Event = exports["event-protection-system"]:getEventSystem()
 
-* FUNCTIONS
-- Client
--- Event.Client.RegisterNetEvent(name, handler)
--- Event.Client.TriggerEvent(name, args)
--- Event.Client.TriggerServerEvent(name, args)
-- Server
--- Event.Server.RegisterServerEvent(name, handler)
--- Event.Server.RegisterNetEvent(name, handler)
--- Event.Server.TriggerClientEvent(name, args)
--- Event.Server.TriggerEvent(name, args)
+# FUNCTIONS
+* Client
+** Event.Client.RegisterNetEvent(name, handler)
+** Event.Client.TriggerEvent(name, args)
+** Event.Client.TriggerServerEvent(name, args)
+* Server
+** Event.Server.RegisterServerEvent(name, handler)
+** Event.Server.RegisterNetEvent(name, handler)
+** Event.Server.TriggerClientEvent(name, args)
+** Event.Server.TriggerEvent(name, args)
 
 # Features
-- AES128 encryption (enough for fivem tho)
-- HMAC/SHA256 hashing on event names
-- Timestamp checking (there is a tolerance. i set it to 5secs)
-- Anti replay attacks (its basically checking the nonce)
-- 4 different encryption modes. default is set to CBCMode which is most secure option atm. (aeslua.lua.ECBMODE, aeslua.lua.CBCMODE, aeslua.lua.OFBMODE, aeslua.lua.CFBMODE)
-- 3 different key options. If you want to change encryption key length you should also change config. default is set to AES128 (aeslua.AES128, aeslua.AES192, aeslua.AES256)
+* AES128 encryption (enough for fivem tho)
+* HMAC/SHA256 hashing on event names
+* Timestamp checking (there is a tolerance. i set it to 5secs)
+* Anti replay attacks (its basically checking the nonce)
+* 4 different encryption modes. default is set to CBCMode which is most secure option atm. (aeslua.lua.ECBMODE, aeslua.lua.CBCMODE, aeslua.lua.OFBMODE, aeslua.lua.CFBMODE)
+* 3 different key options. If you want to change encryption key length you should also change config. default is set to AES128 (aeslua.AES128, aeslua.AES192, aeslua.AES256)
 
 # Want to help me?
 You can send me a message on Discord (my username is nothingthefinest). That way, if you have any requests, I can add them, or you can help me write the code. Alternatively, you can also help me fix any potential bugs by sending an update request via GitHub. And if you help me with the development, I would really appreciate it.
@@ -74,4 +74,5 @@ Basically just drop a star nothing else
 # Credits
 I have a special thanks for to who makes the crypto libraries in pure lua. If they aren't exist, i wasnt able to do the whole project today. 
 https://github.com/Egor-Skriptunoff/pure_lua_SHA
+
 https://github.com/bighil/aeslua
