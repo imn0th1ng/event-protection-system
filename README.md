@@ -39,6 +39,8 @@ There is one config file at the top level on both the client and server. You mus
 
 The whole system is not tested on public servers so if you want to tell me smth about any error or improvement just text me on cfx discord or smth 
 
+While in server if any resource using this protection system, DO NOT RESTART THEM!
+
 # Supported variable types
 String
 Integer
@@ -81,6 +83,7 @@ I have a special thanks for to who makes the crypto libraries in pure lua. If th
 
 * https://github.com/Egor-Skriptunoff/pure_lua_SHA
 * https://github.com/bighil/aeslua
+
 
 
 
