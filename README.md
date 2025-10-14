@@ -9,21 +9,27 @@ The advantage of this system is that the name is regenerated differently for eac
 
 # FAQ
 Q: Is this an anti-cheat?
+
 A: Both yes and no. It's not a fully integrated anti-cheat system; you may need to configure certain events and fine-tune them yourself.
 
 Q: Does it provide 100% security?
+
 A: Of course not. However, as far as I can tell, people who use cheats nowadays search for event exploits through menus and by dumping resources, so it is a resource that can prevent them from obtaining many valuable items on the server, such as items and money.
 
 Q: How does it works?
+
 A: To put it simply, the logic is extremely straightforward. On the server side: RegisterServerEvent, TriggerClientEvent. On the client side: RegisterNetEvent, TriggerEvent, TriggerServerEvent. This involves encrypting client-server & server-client & client-client requests, applying a timestamp and nonce (for replay attacks on events just in case), and verifying them on the server to execute the event.
 
 Q: Can someone bypass this method?
+
 A: If you place resources in escrow (or obfuscate them illegally, which I do not recommend as it reduces performance and may require some adjustments), the likelihood of bypassing them is very low. It would need to extract the AES key via memory analysis, use the function that decrypts it in the Lua executor to deobfuscate it, enter the timestamp, and send the event that way. In a scenario where the AES key hasn't been leaked and you've changed the protection's table name and escrowed your resources, bypassing this type of security would take a very, very long time.
 
 Q: Is there will be a performance cost?
+
 A: Yes unfortunately. That is because of lua is a slow language for mathematical operations.
 
 Q: Did you used AI? (its totally not a faq but i just want to explain myself)
+
 A: Yes but not for main logic. AI just wrote the serializing and deserializing functions.
 
 If you have any questions to me you can ask from discord or you can pm me on cfx.re forum.
@@ -75,4 +81,5 @@ I have a special thanks for to who makes the crypto libraries in pure lua. If th
 https://github.com/Egor-Skriptunoff/pure_lua_SHA
 
 https://github.com/bighil/aeslua
+
 
