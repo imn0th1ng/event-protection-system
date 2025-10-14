@@ -50,8 +50,8 @@ Nil
 
 # Usage
 * CALL MAIN OBJECT
-- You can call the event object with this export
-local Event = exports["event-protection-system"]:getEventSystem()
+* You can call the event object with this export
+* local Event = exports["event-protection-system"]:getEventSystem()
 
 # FUNCTIONS
 * Client
@@ -83,6 +83,7 @@ I have a special thanks for to who makes the crypto libraries in pure lua. If th
 
 * https://github.com/Egor-Skriptunoff/pure_lua_SHA
 * https://github.com/bighil/aeslua
+
 
 
 
