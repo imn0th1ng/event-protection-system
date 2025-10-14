@@ -79,8 +79,9 @@ Basically just drop a star nothing else
 # Credits
 I have a special thanks for to who makes the crypto libraries in pure lua. If they aren't exist, i wasnt able to do the whole project today.
 
-https://github.com/Egor-Skriptunoff/pure_lua_SHA
-https://github.com/bighil/aeslua
+* https://github.com/Egor-Skriptunoff/pure_lua_SHA
+* https://github.com/bighil/aeslua
+
 
 
 
