@@ -3,16 +3,15 @@
 -- ! Encrypt this file with FXAP or some lua obfuscators with. Otherwise it will cause security problems!
 -- ! Encrypt this file with FXAP or some lua obfuscators with. Otherwise it will cause security problems!
 
--- ? Başka bir scripti korumak için fxmanifest.lua içerisinde en yukarıya
--- ? shared_script 'wrapper.lua'
--- ? yapıştırmanız yeterlidir.
+-- ? To protect another script, simply paste the following at the top of fxmanifest.lua:
+-- ? shared_script ‘wrapper.lua’
 
 local isServer = IsDuplicityVersion()
 local Config = {
-    -- ? Buna büyük bir parantez açmak istiyorum, Eğer ki kütüphane ile kullanırsanız daha sağlıklı çalışacaktır. Fakat;
-    -- ? Scriptler escrow ile şifrelenmişse veya değiştirmeye vaktiniz yok ise *bazı* örneğin market gibi scriptleri
-    -- ? Bu ayar üzerinden eventleri otomatik kalibre edebilirsiniz. Büyük scriptlerde sorun yaratabilir.
-    -- * __cfx'i exclude et
+    -- ? I want to make a big point here: it will work better if you use it with the library. However;
+    -- ? If the scripts are encrypted with escrow or you don't have time to change them, *some* scripts, such as market scripts,
+    -- ? You can automatically calibrate events through this setting. It may cause problems in large scripts.
+    -- * TODO: Exclude __cfx
     OverrideNatives = true,
 }
 
@@ -95,4 +94,5 @@ else
         TriggerServerEvent = Event.Client.TriggerServerEvent
     end
     
+
 end
