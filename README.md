@@ -1,5 +1,6 @@
-# # V1.5
+# # Updates
 
+# V1.5
 # The entire logic has been changed.
 The whole problem was that the source wasn't coming through. I looked for many ways to solve this, but in the end, we decided that the most logical approach was to create a common wrapper instead of separating client-server and pulling it with export (it didn't quite work out that way; we realized the hard way that it took me more than 3-4 hours). Now the source is coming through successfully, and without making any code changes, you can simply override events automatically by modifying **fxmanifest.lua** and easily preserve events without any extra effort.
 
@@ -9,7 +10,7 @@ Normally, functions like RegisterServerEvent and RegisterNetEvent were directly 
 # What needs to be updated
 First and foremost, the nonce and timestamp parts must definitely be updated. For example, when you restart a script that has this wrapper, as far as I can see, it can sometimes cause errors. Also, since it's not player-based but shared, the nonce cache of all players can cause problems for multiple players. The timestamp takes the time from the VDS you are using. This is not synchronized with the player and, in most cases, cannot be. Events sent by someone living abroad (in a different location from the VDS) will not be accepted. We will also come up with a solution for this.
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# # Description
 
 # First of all
 First, to explain why I did this project, it is an event protection function that I developed for testing purposes in the early development version of my own anti-cheat, due to the popularity of mostly illegal (not within CitizenFX) anti-cheats and their ineffectiveness in terms of events. If possible, I encourage those who know Lua and are interested in developing it to contact me so we can work on this project together. I have no personal gain in mind for this project because I love this platform and want to see it grow. As far as I can see, everything is now sold for money in FiveM, which I think is wrong. Of course, making money is very important, otherwise there would be no motivation for people, but in this period where cheats can no longer be prevented and have proliferated, these cheats can harm both the player experience and server owners. I don't want to prolong this or make it personal. If you want to improve things and have an idea in mind, please get in touch with me, and let's work together to make this platform even better.
@@ -96,6 +97,7 @@ I have a special thanks for to who makes the crypto libraries in pure lua. If th
 
 * https://github.com/Egor-Skriptunoff/pure_lua_SHA
 * https://github.com/bighil/aeslua
+
 
 
 
