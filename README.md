@@ -63,9 +63,8 @@ Table
 Nil
 
 # Usage
-* CALL MAIN OBJECT
-* You can call the event object with this export
-* local Event = exports["event-protection-system"]:getEventSystem()
+* Add FXManifest to "shared_script "@event-protection-system/wrapper.lua"
+* After that use functions whatever you like.
 
 # FUNCTIONS
 * Client
@@ -97,6 +96,7 @@ I have a special thanks for to who makes the crypto libraries in pure lua. If th
 
 * https://github.com/Egor-Skriptunoff/pure_lua_SHA
 * https://github.com/bighil/aeslua
+
 
 
 
